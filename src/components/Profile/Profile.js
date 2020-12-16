@@ -2,8 +2,7 @@ import React from "react";
 import style from "./Profile.module.css";
 import PropTypes from "prop-types";
 
-const Profile = (props) => {
-  const { name, tag, location, avatar, stats } = props;
+const Profile = ({ name, tag, location, avatar, stats }) => {
   const { followers, views, likes } = stats;
 
   return (
@@ -40,5 +39,5 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.string.isRequired,
+  stats: PropTypes.object.isRequired,
 };
