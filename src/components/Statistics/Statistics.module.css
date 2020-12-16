@@ -1,0 +1,32 @@
+.container {
+  width: 400px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.title {
+  padding: 20px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  color: #364151;
+  font-size: 30px;
+  text-align: center;
+}
+
+.statistics {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+}
+
+.stat {
+  display: flex;
+  flex-direction: row;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0px;
+  list-style-type: none;
+  border: none;
+}
