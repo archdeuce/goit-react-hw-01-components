@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Profile.module.css";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
 const Profile = (props) => {
   const { name, tag, location, avatar, stats } = props;
@@ -35,7 +35,10 @@ const Profile = (props) => {
 
 export default Profile;
 
-// StatisticsItem.propTypes = {
-//   label: PropTypes.string.isRequired,
-//   percentage: PropTypes.number.isRequired,
-// };
+Profile.propTypes = {
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.string.isRequired,
+};

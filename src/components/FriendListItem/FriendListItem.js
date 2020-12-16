@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./FriendListItem.module.css";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
   const status = isOnline ? style.online : style.offline;
@@ -16,7 +16,8 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
 
 export default FriendListItem;
 
-// StatisticsItem.propTypes = {
-//   label: PropTypes.string.isRequired,
-//   percentage: PropTypes.number.isRequired,
-// };
+FriendListItem.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.string.isRequired,
+};
